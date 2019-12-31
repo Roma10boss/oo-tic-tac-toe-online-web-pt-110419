@@ -71,7 +71,7 @@ class TicTacToe
     won_array = won?
     won_array ? @board[won_array[0]] : nil
   end
-  def play(ticTacToe)
+  def play()
     turn until over?
     puts draw? ? "Cat's Game!" : "Congratulations #{winner}!"
   end
