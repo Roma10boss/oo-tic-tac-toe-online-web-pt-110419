@@ -71,8 +71,9 @@ class TicTacToe
     won_array = won?
     won_array ? @board[won_array[0]] : nil
   end
-  def play(:new)
-    turn until over?
+  def play(board)
+    until over?(board) == true 
+    turn(board)
     puts draw? ? "Cat's Game!" : "Congratulations #{winner}!"
   end
 end
