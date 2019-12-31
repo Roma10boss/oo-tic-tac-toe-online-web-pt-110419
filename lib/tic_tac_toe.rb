@@ -76,3 +76,4 @@ class TicTacToe
     puts draw? ? "Cat's Game!" : "Congratulations #{winner}!"
   end
 end
+end
